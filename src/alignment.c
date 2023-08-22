@@ -768,7 +768,7 @@ SEXP read_clustal_align(SEXP ficname)
   SEXP nombreseq;
   char *fname;
   FILE *in;
-  char line[200], *p;
+  char line[2000], *p;
   int i, l = 0, curr_spec, first=TRUEL, curr_len, next_len, tot_spec, curr_max_len =0, carac, wid_name = 0;
   char **seq, **comments, **seqname = NULL;
 
